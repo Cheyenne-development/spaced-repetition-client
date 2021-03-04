@@ -1,0 +1,83 @@
+p, h2 {
+  text-align: center;
+margin: 0px auto;
+}
+
+a.login {
+  margin-top: 6px;
+}
+
+.registration-main {
+  margin: 5% auto;
+  width: 95%;
+}
+
+
+
+.foot {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px auto;
+}
+
+
+.registration-form {
+  width: 100%;
+  margin: 60px auto 30px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 0 1px rgb(0 0 0 / 30%), 0 3px 7px rgb(0 0 0 / 30%), inset 0 1px rgb(255 255 255), inset 0 -3px 2px rgb(0 0 0 / 25%);
+  border-radius: 7px;
+  background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+  background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+.registration-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Label {
+  font-size: 18px;
+  margin-top: 5px;
+  width: 50%;
+}
+
+footer button {
+  display: inline;
+  margin: 4px auto;
+}
+
+
+.registration-form input[type="text"],
+.registration-form input[type="password"] {
+  font-family: "Lato", Calibri, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  width: 40%;
+  padding: 10px;
+  border: none; /* Remove the default border */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1),
+    inset 0 3px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background: #f9f9f9;
+  color: #777;
+  transition: color 0.3s ease-out;
+}
+
+.registration-form input[type="text"] {
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 600 px) {
+  .registration-main {
+    margin: 5%; 
+    width: 100%;
+  }
+}

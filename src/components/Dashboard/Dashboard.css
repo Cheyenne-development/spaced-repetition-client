@@ -1,0 +1,47 @@
+.dashboard-top p {
+  color: black;
+  
+}
+.dashboard-top {
+    margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3, h4 {
+  text-align: center;
+}
+
+.correct-count{
+  margin-top: 12px;
+}
+.correct-answers {
+  margin: 5px;
+}
+.all-words {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.word-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  list-style-position: outside;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+  margin: 8px 15px;
+  padding: 3px 30px;
+  background-color: rgb(248, 236, 220);
+}
+.word-item p {
+  text-align: end;
+}
+
+@media screen and (min-width: 600px) {
+  .dashboard-top {
+    display: flex;
+    margin-top: 55px;
+  }
+}
+
