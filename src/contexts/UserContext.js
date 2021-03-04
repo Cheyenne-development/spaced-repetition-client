@@ -67,7 +67,6 @@ export class UserProvider extends Component {
     }
     LanguageService.getLangAndWords()
     .then(res => {
-        console.log('lang info', res)
       this.setLang(res.language)
       this.setWords(res.words)
     })

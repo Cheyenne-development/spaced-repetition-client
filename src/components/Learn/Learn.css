@@ -8,7 +8,6 @@
 
 h2 {
   color: #000;
-  margin-top: 16px;
 }
 
 .DisplayScore {
@@ -40,11 +39,11 @@ h2 {
 }
 
 button.submitButton {
-  margin: -10px auto 5px;
+  margin: -6px auto 5px;
 }
 
 button.submitBtn {
-  margin: 4px 0 7px 0;
+  margin: 8px 0 7px 0;
 }
 
 .correct-count {

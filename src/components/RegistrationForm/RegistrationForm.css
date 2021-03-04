@@ -2,12 +2,15 @@ p, h2 {
   text-align: center;
 margin: 0px auto;
 }
+.signup{
+  margin-top: 10px;
+}
 
 a.login {
   margin-top: 6px;
 }
 
-.registration-main {
+.registration-section {
   margin: 5% auto;
   width: 95%;
 }
@@ -75,9 +78,12 @@ footer button {
 }
 
 
-@media only screen and (min-width: 600 px) {
-  .registration-main {
-    margin: 5%; 
+@media screen and (min-width: 600px) {
+  .registration-section {
+    margin: 9% auto; 
     width: 100%;
+  }
+  .registration-form {
+    width: 400px;
   }
 }

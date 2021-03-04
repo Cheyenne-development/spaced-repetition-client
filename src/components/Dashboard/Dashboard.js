@@ -19,7 +19,6 @@ class Dashboard extends Component{
   componentDidMount(){
     return LanguageService.getLangAndWords()
     .then(res => {
-        console.log('lang info', res)
       this.context.setLang(res.language)
       this.context.setWords(res.words)
       

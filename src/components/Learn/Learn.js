@@ -18,7 +18,6 @@ class Learn extends Component {
   componentDidMount() {
     LanguageService.getNextWord()
       .then((res) => {
-        console.log("mount-res", res);
         this.context.setNext(res);
         this.context.setScore(res.totalScore);
       })
@@ -139,7 +138,7 @@ class Learn extends Component {
         <form className="MakeGuess" onSubmit={this.handleClickSubmit}>
           {this.displayFeedback()}
           {this.state.currDisplay === "question" && (
-            <Input
+          <Input 
               id="learn-guess-input"
               name="guess"
               placeholder="your answer"
