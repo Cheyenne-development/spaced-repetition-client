@@ -139,9 +139,12 @@ class Learn extends Component {
           {this.displayFeedback()}
           {this.state.currDisplay === "question" && (
           <Input 
+              type="text"
               id="learn-guess-input"
               name="guess"
+              aria-label="Enter your guess"
               placeholder="your answer"
+              aria-required="true"
               required
             />
           )}

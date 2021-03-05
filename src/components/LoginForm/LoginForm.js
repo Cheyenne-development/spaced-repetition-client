@@ -53,9 +53,12 @@ class LoginForm extends Component {
           <Label htmlFor="login-username-input"></Label>
 
          <p> <Input
-         autoComplete="no"
+            autoComplete="off"
+            type="text"
             ref={this.firstInput}
             id="login-username-input"
+            aria-required="true"
+            aria-label="Enter your Username"
             name="username"
             placeholder="Username"
         
@@ -67,8 +70,10 @@ class LoginForm extends Component {
           <Label htmlFor="login-password-input"></Label>
 
           <p><Input
-          autoComplete="new-password"
+            autoComplete="new-password"
             placeholder="Password"
+            aria-required="true"
+            aria-label="Enter your Password"
             id="login-password-input"
             name="password"
             type="password"

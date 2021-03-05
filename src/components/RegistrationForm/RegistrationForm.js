@@ -53,6 +53,8 @@ class RegistrationForm extends Component {
           <Input
             ref={this.firstInput}
             id='registration-name-input'
+            aria-label='Enter your name'
+            aria-required='true'
             name='name'
             required
           />
@@ -63,6 +65,8 @@ class RegistrationForm extends Component {
           </Label>
           <Input
             id='registration-username-input'
+            aria-required='true'
+            aria-label='Please choose a Username'
             name='username'
             required
           />
@@ -73,6 +77,8 @@ class RegistrationForm extends Component {
           </Label>
           <Input
             id='registration-password-input'
+            aria-required='true'
+            aria-label='Please choose a password'
             name='password'
             type='password'
             required

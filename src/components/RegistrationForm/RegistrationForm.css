@@ -1,6 +1,7 @@
 p, h2 {
   text-align: center;
 margin: 0px auto;
+font-size: 20px;
 }
 .signup{
   margin-top: 10px;
@@ -77,13 +78,48 @@ footer button {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 480px) {
+  .registration-section {
+    margin: 3% auto;
+    width: 100%;
+    font-size: 20px;
+}
+  .registration-form {
+    width: 350px;
+    margin-top: 30px;
+}
+}
 
 @media screen and (min-width: 600px) {
   .registration-section {
-    margin: 9% auto; 
+    margin: 25% auto; 
     width: 100%;
   }
   .registration-form {
     width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .registration-section {
+    margin: 9% auto; 
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .registration-section {
+    margin: 39% auto; 
+  }
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .registration-section {
+    margin: 9% auto; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registration-section {
+    margin: 16% auto; 
   }
 }
