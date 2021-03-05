@@ -1,11 +1,10 @@
 # Spaced Repetition Capstone'
-# Spaced repetition Capstone API!
 
 * Live version: https://spaced-repetition-client-opal.vercel.app
 * Demo Username: admin
 * Demo Password: pass
-* Associated Client:
-  - https://github.com/Cheyenne-development/spaced-repetition-client
+* Associated API:
+  - https://github.com/Cheyenne-development/spaced-repetiton-server
 
 ## Setup
 
