@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import AuthApiService from '../services/auth-api-service'
 import TokenService from '../services/token-service'
 import IdleService from '../services/idle-service'
-import LanguageService from '../services/language-service'
 
 const UserContext = React.createContext({
   user: {},
@@ -44,7 +43,7 @@ export class UserProvider extends Component {
       guess: null,
       score: null,
     }
-
+      
     const jwtPayload = TokenService.parseAuthToken()
 
     if (jwtPayload)
@@ -65,12 +64,7 @@ export class UserProvider extends Component {
         this.fetchRefreshToken()
       })
     }
-    LanguageService.getLangAndWords()
-    .then(res => {
-      this.setLang(res.language)
-      this.setWords(res.words)
-    })
-  }
+}
 
   componentWillUnmount() {
     IdleService.unRegisterIdleResets()
@@ -170,3 +164,4 @@ export class UserProvider extends Component {
     )
   }
 }
+

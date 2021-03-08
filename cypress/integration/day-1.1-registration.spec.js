@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-
+import * as helpers from '../support/helpers'
 /**
  * @abstract: Create an account
  *
@@ -51,7 +51,7 @@ describe(`User story: Register an account`, function() {
 
   context(`Given invalid information`, () => {
     const serverError = 'Some error from the server'
-
+    const loginToken = helpers.makeLoginToken()
     beforeEach(() => {
       cy.server()
         .route({
@@ -91,6 +91,7 @@ describe(`User story: Register an account`, function() {
   })
 
   context(`Given valid information`, () => {
+    const loginToken = helpers.makeLoginToken()
     beforeEach(() => {
       cy.server()
         .route({
@@ -105,9 +106,20 @@ describe(`User story: Register an account`, function() {
           },
         })
         .as('postRegister')
+
+       cy.route({
+        method: 'POST',
+        url: '/api/auth/token',
+        // server determins credentials are correct
+        status: 200,
+        response: {
+          authToken: loginToken
+        },
+      })
+      .as('loginRequest')
     })
 
-    it(`redirects to /login`, () => {
+    it(`redirects to Dashboard`, () => {
       const newUser = {
         name: 'Test name',
         username: 'test-username',
@@ -123,10 +135,11 @@ describe(`User story: Register an account`, function() {
         cy.get('#registration-password-input')
           .type(newUser.password)
         cy.root().submit()
-        cy.wait('@postRegister')
+          cy.wait('@loginRequest')
           .url()
-          .should('eq', `${Cypress.config().baseUrl}/login`)
+          .should('eq', `${Cypress.config().baseUrl}/`)
+          })
       })
     })
   })
-})
+

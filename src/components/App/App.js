@@ -38,12 +38,12 @@ export default class App extends Component {
               component={LearningRoute}
             />
             <PublicOnlyRoute
-              path={'/register'}
-              component={RegistrationRoute}
-            />
-            <PublicOnlyRoute
               path={'/login'}
               component={LoginRoute}
+            />
+            <PublicOnlyRoute
+              path={'/register'}
+              component={RegistrationRoute}
             />
             <Route
               component={NotFoundRoute}

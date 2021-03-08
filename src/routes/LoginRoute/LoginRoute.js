@@ -14,7 +14,7 @@ class LoginRoute extends Component {
     const destination = (location.state || {}).from || '/'
     history.push(destination)
   }
-
+  
   render() {
     return (
       <section>
@@ -27,4 +27,4 @@ class LoginRoute extends Component {
   }
 }
 
-export default LoginRoute
+export default LoginRoute 

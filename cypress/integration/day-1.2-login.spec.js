@@ -124,7 +124,6 @@ describe(`User story: Login`, function() {
 
   context(`Given valid credentials`, () => {
     const loginToken = helpers.makeLoginToken()
-
     beforeEach(() => {
       cy.server()
         .route({
