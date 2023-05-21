@@ -1,6 +1,6 @@
 # Spaced Repetition Capstone'
 
-* Live version: https://spaced-repetition-client-opal.vercel.app
+* Live version: https://spaced-repetition-client-gos4hw30n-cheyenne-development.vercel.app/
 * Demo Username: admin
 * Demo Password: pass
 * Associated API:
